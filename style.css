@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@keyframes btn {
+    0% {
+        box-shadow:inset -3px 0px 0px 0px purple;
+    }
+    15.29% {
+        box-shadow:inset -2px -1px 0px 0px purple;
+    }
+    22.89% {
+        box-shadow:inset -1px -2px 0px 0px purple;
+    }
+    30.49% {
+        box-shadow:inset 0px -3px 0px 0px purple;
+    }
+    38.09% {
+        box-shadow:inset 1px -2px 0px 0px purple;
+    }
+    45.69% {
+        box-shadow:inset 2px -1px 0px 0px purple;
+    }
+    53.29% {
+        box-shadow:inset 3px 0px 0px 0px purple;
+    }
+    60.89% {
+        box-shadow:inset 2px 1px 0px 0px purple;
+    }
+    68.49% {
+        box-shadow:inset 1px 2px 0px 0px purple;
+    }
+    76.09% {
+        box-shadow:inset 0px 3px 0px 0px purple;
+    }
+    83.69% {
+        box-shadow:inset -1px 2px 0px 0px purple;
+    }
+    91.29% {
+        box-shadow:inset -2px 1px 0px 0px purple;
+    }
+    100% {
+        box-shadow:inset -3px 0px 0px 0px purple;
+    }
+}
+@keyframes borda {
+    0% {
+        box-shadow:inset 0px 0px 1000px 10px purple;
+    }
+    50% {
+        box-shadow:inset 0px 0px 10px 0px purple;
+    }
+    100% {
+        box-shadow: inset 0px 0px 0px 5px purple;
+    }
+}
+@keyframes drop {
+    0% {
+        filter: drop-shadow(-3px 0px 0px white);
+    }
+    15.29% {
+        filter: drop-shadow(-2px -1px 0px white);
+    }
+    22.89% {
+        filter: drop-shadow(-1px -2px 0px white);
+    }
+    30.49% {
+        filter: drop-shadow( 0px -3px 0px white);
+    }
+    38.09% {
+        filter: drop-shadow( 1px -2px 0px white);
+    }
+    45.69% {
+        filter: drop-shadow( 2px -1px 0px white);
+    }
+    53.29% {
+        filter: drop-shadow(3px 0px 0px white);
+    }
+    60.89% {
+        filter: drop-shadow( 2px 1px 0px white);
+    }
+    68.49% {
+        filter: drop-shadow( 1px 2px 0px white);
+    }
+    76.09% {
+        filter: drop-shadow( 0px 3px 0px white);
+    }
+    83.69% {
+        filter: drop-shadow( -1px 2px 0px white);
+    }
+    91.29% {
+        filter: drop-shadow( -2px 1px 0px white);
+    }
+    99% {
+        filter: drop-shadow(-3px 0px 0px white);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 5px purple);
+    }
+
+}
+
+
+
+body {
+    background-color: black;
+    animation: borda forwards 5s;
+}
+
+.container {
+    display: flex;
+    margin: auto;   
+    width: 96vw;
+    height: 96vh;
+}
+.conteudo {
+    position: relative;
+    border-radius: 13px;
+    width: 220px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.conteudo:hover {
+    animation: btn infinite .5s;
+}
+.conteudo > button {
+    font-size: 3em;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.conteudo > a {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo > a > img {
+    padding-top: 50px;
+    width: 50%;
+    animation: drop forwards 1s;
+}

@@ -101,6 +101,7 @@
 
 
 body {
+    height: 97vh;
     background-color: black;
     animation: borda forwards 5s;
 }
@@ -112,6 +113,7 @@ body {
     height: 96vh;
 }
 .conteudo {
+    padding: 0px;
     position: relative;
     border-radius: 13px;
     width: 220px;
@@ -140,5 +142,5 @@ body {
 .conteudo > a > img {
     padding-top: 50px;
     width: 50%;
-    animation: drop forwards 1s;
+    animation: drop forwards 2s;
 }
